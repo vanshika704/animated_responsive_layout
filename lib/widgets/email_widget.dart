@@ -3,6 +3,8 @@ import '../models/models.dart';
 import 'star_button.dart';
 
 enum EmailType {
+  //  nya type ka tareeka h named contants likhne ka , teen type ki mail ho skti h , jo teeno likhi h
+// access kaise hongi ? EmailType.preview  , EmailType.reply , EmailType.replyAll
   preview,
   threaded,
   primaryThreaded,
@@ -359,3 +361,4 @@ class _EmailReplyOptionsState extends State<EmailReplyOptions> {
     );
   }
 }
+// yrr isme kuc jyda hi hogya use ho ni rha app me baat smjh si ni aayi
