@@ -37,6 +37,7 @@ class EmailListView extends StatelessWidget {
             // list generate ki gyi h
             data.emails.length,
             (index) {
+              // iske neeche ka maal smjh toh aagya prr use kha hora h ye ni smjh  aaya
               return Padding(
                 padding: const EdgeInsets.only(bottom: 8.0),
                 child: EmailWidget(
