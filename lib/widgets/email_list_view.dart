@@ -5,22 +5,26 @@ import '../models/models.dart';
 import 'email_widget.dart';
 import 'search_bar.dart' as search_bar;
 
+// ab yha pe widegts aare h , joki humko page prr dikhai pdega
 class EmailListView extends StatelessWidget {
+  // stateless widegt bnaya h , baad me change nahi kiya jaa skta h
   const EmailListView({
-    super.key,
+    super.key, // key pass ki h kuki list aayegi , or list me hrr item ko unique key pass hogi
     this.selectedIndex,
     this.onSelected,
     required this.currentUser,
   });
 
-  final int? selectedIndex;
+  final int?
+      selectedIndex; // int ke aage question mark ka mtlb ki ye null bhi ho skta h
   final ValueChanged<int>? onSelected;
   final User currentUser;
 
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 8.0),
+      padding:
+          const EdgeInsets.symmetric(horizontal: 8.0), // ends curve krne ko
       child: ListView(
         children: [
           const SizedBox(height: 8),
