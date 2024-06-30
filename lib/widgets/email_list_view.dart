@@ -26,11 +26,15 @@ class EmailListView extends StatelessWidget {
       padding:
           const EdgeInsets.symmetric(horizontal: 8.0), // ends curve krne ko
       child: ListView(
+        // list view dii gyi h
         children: [
           const SizedBox(height: 8),
-          search_bar.SearchBar(currentUser: currentUser),
+          search_bar.SearchBar(
+              currentUser:
+                  currentUser), // yha thoda khatarnaak kaam hua h , dhyn se smjho , searchbar ko call lgai gyi h ,joki humko current user ka avatar dikhara h
           const SizedBox(height: 8),
           ...List.generate(
+            // list generate ki gyi h
             data.emails.length,
             (index) {
               return Padding(
